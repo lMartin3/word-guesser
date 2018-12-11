@@ -1,0 +1,19 @@
+# Compiled binary addons (http://nodejs.org/api/addons.html)
+build/Release
+
+# Dependency directories
+node_modules
+jspm_packages
+node_modules/
+dist/
+npm-debug.log
+
+# project
+.vscode/
+typings/
+www/
+plugins/
+hooks/
+cordova/
+platforms/
+src/assets/f7_fonts
