@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<head>
+<title>Tap Event</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" href="./css/main.css">
+<script src="./js/jquery-1.11.3.min.js"></script>
+<script src="./js/jquery.mobile-1.4.5.min.js"></script>
+<script src="./js/wordsimport.js"></script>
+<script src="./js/main.js"></script>
+<script>
+$(document).on("pagecreate","#page1",function(){
+  $("#asd").on("tap",function(){
+    $("#asd").hide();
+  });
+});
+</script>
+</head>
+<body>
+<div data-role="page" id="page1">
+  <div data-role="header">
+    <h2>Adivinapalabra</h2>
+  </div>
+
+  <div data-role="main" class="ui-content">
+     <p id="asd">Aviso: es posible que la aplicación se 'tilde' mientras se busca</p>
+     <input type="text" id="param_wordlength" placeholder="Longitud de la palabra">
+     <input type="text" id="param_letters" placeholder="Posibles letras (separar con coma)">
+     <button id="process">0</button>
+     <div class="ctr">
+       <h2 id="results_title">Resultados [x]:</h2>
+       <ul id="results"></ul>
+     </div>
+  </div>
+
+  <div data-role="footer" class="ctr">
+      <h2>Acerca de:</h2>
+      Adivinapalabra es una aplicación gratuita y de código abierto hecha utilizando tecnologías web y Apache Cordova.<br>      
+      <button href="https://github.com/lmartin3/word-guesser">Repositorio en github</button><br>
+      <button href="mailto:dev.martin@protonmail.com">Contactar al autor</button>
+  </div>
+</div>
+</body>
